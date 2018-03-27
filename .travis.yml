@@ -4,9 +4,8 @@ node_js:
 
 before_script:
   - npm install -g @angular/cli
-  - cd town
 script:
-  - ng build --env prod
+  ng build --prod --bh /projet_front-end/
 
 deploy:
   provider: pages
