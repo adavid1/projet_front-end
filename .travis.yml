@@ -5,6 +5,7 @@ node_js:
 before_script:
   - npm install -g @angular/cli
 script:
+  - cd town
   - ng build --env prod
 
 deploy:
@@ -12,7 +13,5 @@ deploy:
   skip-cleanup: true
   github-token: $GITHUB_TOKEN
   keep-history: true
-  target-branch: gh-pages
-  local-dir: dist
   on:
-branch: master
+    branch: master
