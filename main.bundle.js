@@ -157,7 +157,7 @@ var MeteoComponent = /** @class */ (function () {
     }
     MeteoComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.townService.getTown(1).subscribe(function (town) {
+        this.townService.getTown(3).subscribe(function (town) {
             _this.town = town;
         });
     };
@@ -172,26 +172,6 @@ var MeteoComponent = /** @class */ (function () {
     return MeteoComponent;
 }());
 
-/*import { Component, OnInit } from '@angular/core';
-import { Town } from '../town';
-
-@Component({
-  selector: 'app-meteo',
-  templateUrl: './meteo.component.html',
-  styleUrls: ['./meteo.component.css']
-})
-export class MeteoComponent implements OnInit
-{
-  
-  
-  town: Town = {id: 1, name: "belfort", temperature:0, icon: "rain"};
-  //town: Town = {id: 2 , name "New-York": , temperature:22 , icon: "cloudy"};
-  
-  constructor() { }
-
-  ngOnInit() { }
-
-}*/ 
 
 
 /***/ }),
@@ -229,29 +209,6 @@ var TownService = /** @class */ (function () {
     return TownService;
 }());
 
-/*import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-import { Town } from './town';
-import {environment} from '../environments/environment';
-
-const TOWN_API_URL = environment.TOWN_API_URL;
-
-
-@Injectable()
-export class TownService {
-    
-  constructor(private http: HttpClient) { }
-
-  
-getTown(id : number) : Observable<Town> {
-    return this.http.get<Town[]>(TOWN_API_URL)
-  }
-  
-  
-  }
-
-}*/ 
 
 
 /***/ }),
