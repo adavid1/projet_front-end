@@ -74,12 +74,14 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__meteo_meteo_component__ = __webpack_require__("./src/app/meteo/meteo.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_material_card__ = __webpack_require__("./node_modules/@angular/material/esm5/card.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_material_button__ = __webpack_require__("./node_modules/@angular/material/esm5/button.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_common_http__ = __webpack_require__("./node_modules/@angular/common/esm5/http.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -99,6 +101,7 @@ var AppModule = /** @class */ (function () {
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
                 __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+                __WEBPACK_IMPORTED_MODULE_7__angular_common_http__["b" /* HttpClientModule */],
                 __WEBPACK_IMPORTED_MODULE_5__angular_material_card__["a" /* MatCardModule */],
                 __WEBPACK_IMPORTED_MODULE_6__angular_material_button__["a" /* MatButtonModule */],
             ],
@@ -123,7 +126,7 @@ module.exports = ".mat-elevation-z0{-webkit-box-shadow:0 0 0 0 rgba(0,0,0,.2),0 
 /***/ "./src/app/meteo/meteo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "mdre"
+module.exports = "<mat-card class=\"example-card\">\n  <mat-card-header>\n    <div mat-card-avatar class=\"example-header-image\"></div>\n    <mat-card-title><h1>{{town.name | uppercase}}</h1></mat-card-title>\n  </mat-card-header>\n  <br/>\n  <BR>\n  <mat-card-content>\n    <p><i class=\"wi wi-forecast-io-{{town.icon}}\"></i>  {{town.temperature}}°</p>\n  </mat-card-content>\n  <mat-card-actions>\n    <a href=\"http://cat-bounce.com/\" mat-button>LIKE</a>\n    <a href=\"http://www.staggeringbeauty.com/\" mat-button>SHARE</a>\n    <br><br><br>copyright ©Axel David  All rights reserved.\n  </mat-card-actions>\n</mat-card>"
 
 /***/ }),
 
