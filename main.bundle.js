@@ -126,7 +126,7 @@ module.exports = ".mat-elevation-z0{-webkit-box-shadow:0 0 0 0 rgba(0,0,0,.2),0 
 /***/ "./src/app/meteo/meteo.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-card class=\"example-card\">\n  <mat-card-header>\n    <div mat-card-avatar class=\"example-header-image\"></div>\n    <mat-card-title><h1>{{town.name | uppercase}}</h1></mat-card-title>\n  </mat-card-header>\n  <br/>\n  <BR>\n  <mat-card-content>\n    <p><i class=\"wi wi-forecast-io-{{town.icon}}\"></i>  {{town.temperature}}°</p>\n  </mat-card-content>\n  <mat-card-actions>\n    <a href=\"http://cat-bounce.com/\" mat-button>LIKE</a>\n    <a href=\"http://www.staggeringbeauty.com/\" mat-button>SHARE</a>\n    <br><br><br>copyright ©Axel David  All rights reserved.\n  </mat-card-actions>\n</mat-card>"
+module.exports = "<mat-card class=\"example-card\">\n  <mat-card-header>\n    <div mat-card-avatar class=\"example-header-image\"></div>\n    <mat-card-title><h1>{{town.name | uppercase}}</h1></mat-card-title>\n  </mat-card-header>\n  <br/>\n  <BR>\n  <mat-card-content>\n    <p><i class=\"wi wi-forecast-io-{{town.icon}}\"></i>  {{town.temperature-32}}°C</p>\n  </mat-card-content>\n  <mat-card-actions>\n    <a href=\"http://cat-bounce.com/\" mat-button>LIKE</a>\n    <a href=\"http://www.staggeringbeauty.com/\" mat-button>SHARE</a>\n    <br><br><br>copyright ©Axel David  All rights reserved.\n  </mat-card-actions>\n</mat-card>"
 
 /***/ }),
 
@@ -157,7 +157,7 @@ var MeteoComponent = /** @class */ (function () {
     }
     MeteoComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.townService.getTown(1).subscribe(function (town) {
+        this.townService.getTown(3).subscribe(function (town) {
             _this.town = town;
         });
     };
