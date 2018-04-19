@@ -157,7 +157,7 @@ var MeteoComponent = /** @class */ (function () {
     }
     MeteoComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.townService.getTown(3).subscribe(function (town) {
+        this.townService.getTown(1).subscribe(function (town) {
             _this.town = town;
         });
     };
