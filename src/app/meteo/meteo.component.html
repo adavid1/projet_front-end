@@ -1,1 +1,16 @@
-mdre
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title><h1>{{town.name | uppercase}}</h1></mat-card-title>
+  </mat-card-header>
+  <br/>
+  <BR>
+  <mat-card-content>
+    <p><i class="wi wi-forecast-io-{{town.icon}}"></i>  {{town.temperature}}°</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <a href="http://cat-bounce.com/" mat-button>LIKE</a>
+    <a href="http://www.staggeringbeauty.com/" mat-button>SHARE</a>
+    <br><br><br>copyright ©Axel David  All rights reserved.
+  </mat-card-actions>
+</mat-card>
