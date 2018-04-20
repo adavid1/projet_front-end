@@ -157,7 +157,7 @@ var MeteoComponent = /** @class */ (function () {
     }
     MeteoComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.townService.getTown(3).subscribe(function (town) {
+        this.townService.getTown(4).subscribe(function (town) {
             _this.town = town;
         });
     };
@@ -197,7 +197,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TownService = /** @class */ (function () {
     function TownService(http) {
         this.http = http;
-        this.URL = "http://lpa2sgadot.herokuapp.com/towns";
+        this.URL = "https://projet-thoory-lpa2.herokuapp.com/towns"; //j'utilise l'app de Thomas car la mienne indique error 500 en json
     }
     TownService.prototype.getTown = function (id) {
         return this.http.get(this.URL + "/" + id + ".json");
