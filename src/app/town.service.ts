@@ -6,7 +6,7 @@ import { Town } from './town';
 @Injectable()
 export class TownService {
   
-  private URL = "https://lpa2sgadot.herokuapp.com/towns"
+  private URL = "https://projet-thoory-lpa2.herokuapp.com/towns" //j'utilise l'app de Thomas car la mienne indique error 500 en json
   
   constructor(private http: HttpClient) { }
 
