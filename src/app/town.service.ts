@@ -6,7 +6,7 @@ import { Town } from './town';
 @Injectable()
 export class TownService {
   
-  private URL = "http://lpa2sgadot.herokuapp.com/towns"
+  private URL = "https://lpa2sgadot.herokuapp.com/towns"
   
   constructor(private http: HttpClient) { }
 
