@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/adavid1/projet_front-end.svg?branch=master)](https://travis-ci.org/adavid1/projet_front-end) [![Maintainability](https://api.codeclimate.com/v1/badges/24ed16c00c4c06591fc5/maintainability)](https://codeclimate.com/github/adavid1/projet_front-end/maintainability)
 # projet_front-end
 # Town
 
